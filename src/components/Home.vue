@@ -4,7 +4,7 @@
   >
     <video ref="video" autoplay loop muted>
       <source
-        src="../assets/backgrounds/pexels-pavel-danilyuk-5495781-2560x1080-30fps.mp4"
+        src="../assets/backgrounds/developerCoding.mp4"
         type="video/mp4"
       />
     </video>
