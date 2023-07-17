@@ -23,7 +23,7 @@
 </template>
 
 <script>
-import RightArrow from '../assets/arrow-right.svg';
+import RightArrow from '../assets/arrow-left.svg';
 import { VITE_APP_CONFIG } from '../config';
 
 export default {
