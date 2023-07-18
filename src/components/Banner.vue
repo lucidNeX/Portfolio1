@@ -13,7 +13,7 @@
           </div>
         </h2>
         <div class="btn-row">
-          <a href="https://github.com/lucidNeX" target="_blank">
+          <a href="https://instagram.com/_lucidnex_?igshid=ZGUzMzM3NWJiOQ==" target="_blank">
             More about me <RightArrow />
           </a>
         </div>
@@ -23,7 +23,7 @@
 </template>
 
 <script>
-import RightArrow from '../assets/arrow-left.svg';
+import RightArrow from '../assets/arrow-right.svg';
 import { VITE_APP_CONFIG } from '../config';
 
 export default {

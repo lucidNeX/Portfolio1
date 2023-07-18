@@ -117,7 +117,7 @@ export default {
           opacity: 0.8;
           color: $white;
           font-weight: 600;
-                     background-color: rgba(111, 200, 84, 0.322);
+                    //  background-color: rgba(111, 200, 84, 0.322);
 
           @include media('<=desktop', '>tablet') {
             font-size: 1.4rem;
