@@ -13,7 +13,7 @@
           </div>
         </h2>
         <div class="btn-row">
-          <a href="https://github.com/0xbul1" target="_blank">
+          <a href="https://github.com/lucidNeX" target="_blank">
             More about me <RightArrow />
           </a>
         </div>
@@ -73,7 +73,7 @@ export default {
           height: 48px;
         }
         @include media('<=phone') {
-          height: 32px;
+          height: 62px;
         }
         span {
           position: absolute;

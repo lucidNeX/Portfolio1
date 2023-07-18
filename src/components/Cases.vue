@@ -13,7 +13,7 @@
         <div class="case" v-for="caseItem in projectDesc" :key="caseItem.id">
           <div class="case-details">
             <span>{{ caseItem.subtitle }}</span>
-            <h2>{{ caseItem.title }}</h2>
+            <h6>{{ caseItem.title }}</h6>
           </div>
           <div class="case-image">
             <img :src="dynamicImport(caseItem.img)" :alt="caseItem.title" />
@@ -36,7 +36,7 @@ export default {
   },
   setup() {
     const dynamicImport = (name) => {
-      return new URL(`../assets/${name}.jpeg`, import.meta.url).href;
+      return new URL(`../assets/${name}.jpg`, import.meta.url).href;
     };
     return {
       projectDesc: VITE_APP_CONFIG.projectDesc,
@@ -112,11 +112,13 @@ export default {
           padding: 16px;
         }
         span {
-          margin-top: 156px;
+          margin-top: 216px;
           font-size: 1.6rem;
           opacity: 0.8;
           color: $white;
           font-weight: 600;
+                     background-color: rgba(111, 200, 84, 0.322);
+
           @include media('<=desktop', '>tablet') {
             font-size: 1.4rem;
           }
@@ -125,12 +127,16 @@ export default {
             line-height: 2.2rem;
           }
         }
-        h2 {
-          font-size: 2.4rem;
-          line-height: 3.4rem;
+        h6 {
+          font-size: 2rem;
+          line-height: 2.4rem;
           width: 85%;
           margin-top: 16px;
           color: $white;
+          text-decoration-color: 1px solid green($color: #000000);
+          text-decoration:underline solid white;
+                    //  background-color: rgba(50, 62, 45, 0.399);
+
           @include media('<=desktop', '>tablet') {
             font-size: 2rem;
             line-height: 2.4rem;

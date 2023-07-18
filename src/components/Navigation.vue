@@ -1,17 +1,17 @@
 <template>
   <nav>
-    <div class="container">
+    <div class="container col-12">
       <div class="nav-columns">
         <div class="nav-column">
           <div class="nav-label">Contact</div>
-          <div class="nav-infos">
-            <ul class="nav-info">
+          <div class="column nav-infos col-xs-12 col-sm-12">
+            <ul class="nav-info col-xs-12 col-sm-12">
               <li class="nav-info-label">Email</li>
               <li>
                 <a :href="`mailto:${email}`">{{ email }}</a>
               </li>
             </ul>
-            <ul class="nav-info">
+            <ul class="nav-info col-xs-12 col-sm-12">
               <li class="nav-info-label">Phone</li>
               <li>
                 <a :href="`tel:${phone}`">{{ phone }}</a>
@@ -23,6 +23,8 @@
     </div>
   </nav>
 </template>
+
+
 <script>
 import { VITE_APP_CONFIG } from '../config';
 export default {
@@ -46,7 +48,8 @@ nav {
   display: none;
   position: absolute;
   overflow: hidden;
-  background: $yellow;
+  background: $grey;
+  color: white;
   a {
     position: relative;
     &:after {
@@ -81,6 +84,7 @@ nav {
     }
     .nav-column {
       width: 45%;
+      height: auto;
       @include media('<=654px') {
         width: 100%;
       }
@@ -107,6 +111,7 @@ nav {
         flex-wrap: wrap;
         @include media('<=654px') {
           justify-content: space-between;
+          display: block;
         }
         .nav-info {
           padding: 0;
@@ -117,7 +122,7 @@ nav {
             }
           }
           .nav-info-label {
-            font-weight: 600;
+            font-weight: 400;
           }
           li {
             font-weight: 300;

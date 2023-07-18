@@ -6,7 +6,6 @@
   <div class="App">
     <router-view :dimensions="dimensions"></router-view>
   </div>
-        <!-- <Home/> -->
 
   <Navigation />
 </template> 
@@ -16,14 +15,12 @@ import { onMounted, onUnmounted, reactive, ref } from 'vue';
 import { debounce } from './utils';
 import Header from './components/Header.vue';
 import Navigation from './components/Navigation.vue';
-import Home from './components/Home.vue'
 import { VITE_APP_CONFIG } from './config';
 
 export default {
   components: {
     Header,
     Navigation,
-    Home,
   },
   setup() {
     document.title = VITE_APP_CONFIG.SiteName;
